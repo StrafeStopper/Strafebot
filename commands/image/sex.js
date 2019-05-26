@@ -3,18 +3,19 @@ const resources = require('../../resources.json')
 
 exports.run = async (m, a) => {
     let target = m.mentions.members.first()
+    let member = m.member
     let role = m.guild.roles.find(r => r.name === "consent")
     if (!target) return m.channel.send('Mention someone to have sex with!')
-    if(m.mentions.members.first().roles.some(r=>["consent"].includes(r.name)))
+    if(member.roles.some(r=>["consent"].includes(r.name)))
     {
       const embed = Bark.embed()
       .setDescription(`${m.author} **had "consensual" sex with ** ${target}**!**`)
       m.channel.send({embed})
-      target.removeRole(role).catch(console.error)
+      member.removeRole(role).catch(console.error)
       m.delete()
     } else {
       const embed = Bark.embed()
-      .setDescription(`**Sorry** ${m.author}, ${taget} **has not given you consent, raping is disabled on **${m.guild.name}**!**`)
+      .setDescription(`**Sorry** ${m.author}, ${target} **has not given you consent, raping is disabled on **${m.guild.name}**!**`)
       m.channel.send({embed})
       m.delete()
     }
