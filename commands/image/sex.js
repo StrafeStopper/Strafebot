@@ -9,11 +9,11 @@ exports.run = async (m, a) => {
       const embed = Bark.embed()
       .setDescription(`${m.author} **had "consensual" sex with ** ${target}**!**`)
       m.channel.send({embed})
-      member.removeRole()
+      target.removeRole(role).catch(console.error)
       m.delete()
     } else {
       const embed = Bark.embed()
-      .setDescription(`**Sorry,** ${target} **has not given you consent, raping is disabled on **${m.guild.name}**!**`)
+      .setDescription(`**Sorry** ${m.author}, ${taget} **has not given you consent, raping is disabled on **${m.guild.name}**!**`)
       m.channel.send({embed})
       m.delete()
     }
