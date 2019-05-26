@@ -1,0 +1,41 @@
+{
+  "name": "barking-bot",
+  "version": "2.2.1",
+  "description": "Discord bot made by BarkingDog#4975",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/BarkingDog/barking-bot-new.git"
+  },
+  "keywords": [
+    "barking dog",
+    "barkingdog",
+    "barkingbot",
+    "barking bot",
+    "barking-bot",
+    "barking_bot",
+    "discord bot"
+  ],
+  "author": "BarkingDog#4975",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://gitlab.com/BarkingDog/barking-bot/issues"
+  },
+  "homepage": "https://gitlab.com/BarkingDog/barking-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "level": "^4.0.0"
+  },
+  "optionalDependencies": {
+    "anifetch": "^2.1.4",
+    "bufferutil": "^4.0.1",
+    "ffmpeg-binaries": "^4.0.0",
+    "giph": "^1.0.0",
+    "node-opus": "^0.3.1",
+    "yt-search": "^0.4.1",
+    "ytdl-core": "^0.28.3"
+  }
+}
