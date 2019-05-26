@@ -4,6 +4,7 @@ const resources = require('../../resources.json')
 exports.run = async (m, a) => {
     let target = m.mentions.members.first()
     let role = m.guild.roles.find(r => r.name === "consent")
+    if (!target) return m.channel.send('Mention someone to have sex with!')
     if(m.mentions.members.first().roles.some(r=>["consent"].includes(r.name)))
     {
       const embed = Bark.embed()
@@ -18,6 +19,7 @@ exports.run = async (m, a) => {
       m.delete()
     }
 
+    //old system, doesnt work
     /*let role = m.guild.roles.find(r => r.name === "consent")
     const member = m.mentions.members.first() || m.guild.members.get(a[0])
     if (!member) return m.channel.send('Mention someone to have sex with!')
