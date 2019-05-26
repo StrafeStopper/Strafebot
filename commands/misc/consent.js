@@ -12,7 +12,6 @@ exports.run = async (m, a) => {
 		description: `${target} **has been given consent to smash by **${m.author}**!**`}})
 	m.delete()
 }
-//}
 
 exports.data = {
     'names': ['consent', 'pleasesex'],
