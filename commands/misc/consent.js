@@ -14,7 +14,7 @@ exports.run = async (m, a) => {
 }
 
 exports.data = {
-    'names': ['consent', 'pleasesex'],
+    'names': ['consent', 'pleasesex', 'notbillcosby'],
     'perms': '',
     'help': {
         'category': 'misc',
