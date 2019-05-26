@@ -10,4 +10,4 @@ A multifunctional (and probably modular) JS discord bot
 * [How to run the bot](DOCS/usage.md)
 
 ## License
-License - [GNU AGPL v3.0](LICENSE.md)
+License - [GNU AGPL v3.0](LICENSE.md) 
