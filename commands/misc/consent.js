@@ -4,7 +4,7 @@ exports.run = async (m, a) => {
     // Command's code
 	let target = m.mentions.members.first()
 	let role = m.guild.roles.find(r => r.name === "consent")
-
+	if (!target) return m.channel.send('Mention someone to give consent to!')
 	target.addRole(role).catch(console.error)
 
 	m.channel.send({embed: {
