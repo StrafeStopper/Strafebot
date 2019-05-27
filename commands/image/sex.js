@@ -1,6 +1,7 @@
 const Bark = require('../../bot')
 const resources = require('../../resources.json')
 
+//this fucks someone (with consent) (maybe)
 exports.run = async (m, a) => {
     let target = m.mentions.members.first()
     let member = m.member
